@@ -11,63 +11,40 @@ public class Main {
 	private int num1;
 	private int num2;
 
-	public void scan() {
+	void scan() {
 		Scanner sc = new Scanner(System.in);
 		num1 = sc.nextInt();
 		num2 = sc.nextInt();
 		sc.close();
 	}
 
-	public void swap() {
+	int getNum1() {
+		int tmp=0;
 		if (num1 > num2) {
-			int tmp = 0;
 			tmp = num2;
 			num2 = num1;
 			num1 = tmp;
-		}
+		}return num1;
 	}
 
-	public void out() {
+	int getNum2() {
+		return num2;
+	}
+
+	void out(int num1, int num2) {
 		for (; num1 <= num2; num1++) {
 			System.out.println("== " + num1 + "dan ==");
 			for (int i = 1; i < 10; i++) {
 				System.out.printf("%d * %d = %2d\n", num1, i, num1 * i);
 			}
 			System.out.println();
-
-			
-//	int getNum1() {
-//		int tmp=0;
-//		if (num1 > num2) {
-//			tmp = num2;
-//			num2 = num1;
-//			num1 = tmp;
-//		}return num1;
-//	}
-//
-//	int getNum2() {
-//		return num2;
-//	}
-//
-//	void out(int num1, int num2) {
-//		for (; num1 <= num2; num1++) {
-//			System.out.println("== " + num1 + "dan ==");
-//			for (int i = 1; i < 10; i++) {
-//				System.out.printf("%d * %d = %2d\n", num1, i, num1 * i);
-//			}
-//			System.out.println();
-//		}
-//	}
-
 		}
 	}
 
 	public static void main(String[] args) {
 		Main mm = new Main();
 		mm.scan();
-		mm.swap();
-		mm.out();
-//		mm.out(mm.getNum1(), mm.getNum2());
 
+		mm.out(mm.getNum1(), mm.getNum2());
 	}
 }
