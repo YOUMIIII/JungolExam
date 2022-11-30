@@ -12,16 +12,16 @@ public class Main {
 
 		System.out.println();
 
-		int j = 10;
-		while (j <= 20) {
-			System.out.print(j++ + " ");
-		}
-
-		System.out.println();
-		
-		int k = 10;
-		do {
-			System.out.print(k++ + " ");
-		} while (k <= 20);
+//		int j = 10;
+//		while (j <= 20) {
+//			System.out.print(j++ + " ");
+//		}
+//
+//		System.out.println();
+//		
+//		int k = 10;
+//		do {
+//			System.out.print(k++ + " ");
+//		} while (k <= 20);
 	}
 }
