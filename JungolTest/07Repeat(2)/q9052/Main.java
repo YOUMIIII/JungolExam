@@ -9,6 +9,8 @@ public class Main {
     Scanner sc = new Scanner(System.in);
     for(int i = 0; i < score.length; i++){
         score[i] = sc.nextInt();
+
+
     }
 
 }
