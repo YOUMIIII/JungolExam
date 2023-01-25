@@ -13,9 +13,7 @@ public class Main {
             score[i] = sc.nextInt();
             sum += score[i];
         }
-
         System.out.println("총점 : " + sum);
         System.out.printf("평균 : %.1f", ((double)sum/5));
-
     }
 }
